@@ -39,7 +39,7 @@ void SearchMazeMovesTest2() {
       {"", "", "*", "", ""},
       {"S", "*", "F", "", ""},
     };
-    assertEquals(4, (int)method.invoke(null, new Object[]{maze}));
+    assertEquals(8, (int)method.invoke(null, new Object[]{maze}));
   }
   catch (NoSuchMethodException e) {
     fail("Method does not exist");
@@ -62,7 +62,7 @@ void SearchMazeMovesTest1() {
       {"", "", "", ""},
       {"S", "*", "F", "*"},
     };
-    assertEquals(8, (int)method.invoke(null, new Object[]{maze}));
+    assertEquals(4, (int)method.invoke(null, new Object[]{maze}));
   }
   catch (NoSuchMethodException e) {
     fail("Method does not exist");
